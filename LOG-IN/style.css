@@ -1,0 +1,1329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "TarabaBold";
+  src: url("./assets/TarabaFont-ExtraBold.ttf") format("ttf"),
+    url("./assets/TarabaFont-ExtraBold.woff2") format("woff2");
+}
+
+.bold {
+  font-family: "TarabaBold" !important;
+}
+
+body {
+  font-family: "Comfortaa", cursive;
+  overflow-x: hidden;
+}
+
+body ::-webkit-scrollbar {
+  display: none;
+}
+
+/* HEADER */
+header {
+  background-color: #fafafa;
+  box-shadow: 0px 2px 10px rgba(45, 45, 45, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bolt-logo {
+  width: 206px;
+  height: 55px;
+  margin: 45px 40px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 16px;
+  text-decoration: none;
+  color: #2d2d2d;
+  display: block;
+}
+
+.log-in {
+  color: #ffa039;
+  text-decoration: underline;
+  margin: 0;
+  margin-left: 4px;
+  margin-right: 20px;
+}
+
+.sign-up {
+  border: 2px solid #ffa039;
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.theme-icon {
+  margin: 0;
+  margin-right: 40px;
+  width: 22px;
+  height: 23px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu-icon2 {
+  display: none;
+}
+
+/* LOG IN */
+main {
+  display: flex;
+  background-color: rgba(255, 207, 155, 0.1);
+  align-items: center;
+}
+
+.lost-password {
+  display: flex;
+  background-color: rgba(255, 207, 155, 0.1);
+  display: none;
+}
+
+.resend-activation-email {
+  display: flex;
+  background-color: rgba(255, 207, 155, 0.1);
+  align-items: flex-start;
+  display: none;
+}
+
+.home,
+.lost-password-home,
+.resend-activation-email-home {
+  width: 50%;
+  margin-top: 84px;
+  margin-left: 156px;
+}
+
+.home h2,
+.lost-password-home h2,
+.resend-activation-email-home h2 {
+  font-size: 43.95px;
+  line-height: 53px;
+  color: #ff7800;
+  margin-bottom: 16px;
+}
+
+.home p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #666666;
+  margin-bottom: 32px;
+}
+
+.lost-password-home p,
+.resend-activation-email-home p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #666666;
+  margin-bottom: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+form input {
+  width: 548px;
+  height: 51px;
+  background: #fafafa;
+  border: 1px solid #999898;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2d2d2d;
+}
+
+.resend-activation-email form input {
+  border: 1px solid #2d2d2d;
+}
+
+.btn-link {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.password-recovery {
+  margin-top: 24px;
+  width: 198px;
+  height: 47px;
+  background: linear-gradient(93.53deg, #666666 3.2%, #2d2d2d 100%);
+  box-shadow: inset -2px -2px 6px #2d2d2d;
+  border-radius: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.send-activation {
+  margin-top: 24px;
+  width: 198px;
+  height: 47px;
+  background: #ffa039;
+  box-shadow: inset -2px -2px 10px #ff7800;
+  border-radius: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fafafa;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-link a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #ffa039;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin: 27px 0 21px 0;
+  gap: 8px;
+}
+
+.checkbox img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.validation {
+  display: none;
+}
+
+.checkbox p {
+  margin: 0;
+}
+
+.home button {
+  width: 198px;
+  height: 47px;
+  background: #ffa039;
+  box-shadow: inset -2px -2px 10px #ff7800;
+  border-radius: 15px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fafafa;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.main-links {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.hidden {
+  display: none;
+}
+
+.main-links button {
+  background-color: transparent;
+  box-shadow: none;
+  width: max-content;
+  height: max-content;
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #ffa039;
+}
+
+.paragraph-link {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 132px;
+}
+
+.paragraph-link p {
+  margin: 0;
+}
+
+.paragraph-link a {
+  color: #ffa039;
+}
+
+.log-in-illustration {
+  width: 50%;
+}
+
+.lost-password-illustration {
+  width: 50%;
+  padding-bottom: 120px;
+  padding-top: 80px;
+}
+
+.resend-activation-email-illustration {
+  width: 50%;
+  padding-bottom: 80px;
+  padding-top: 90px;
+}
+
+.log-in-illustration img {
+  width: 498px;
+}
+
+.lost-password-illustration img {
+  width: 505px;
+  height: 505px;
+}
+
+.resend-activation-email-illustration img {
+  width: 548px;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+}
+
+.logos-and-links {
+  display: flex;
+  background: #ffffff;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+  flex-grow: 3;
+}
+
+.logos {
+  margin-top: 28px;
+  margin-right: 186px;
+  margin-left: 40px;
+}
+
+.logos p {
+  margin-top: 60px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #666666;
+  margin-bottom: 16px;
+}
+
+.taraba-logo {
+  width: 136px;
+  margin-bottom: 15px;
+}
+
+.taraba-logo img {
+  width: 100%;
+}
+
+.social-network-logos img {
+  width: 34px;
+  height: 34px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.links {
+  margin-top: 50px;
+}
+
+.links p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 11px;
+  color: #2d2d2d;
+  margin-bottom: 16px;
+}
+
+.links a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: underline;
+}
+
+.link-gray a {
+  color: #666666;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.link-orange {
+  margin-top: 42px;
+  margin-bottom: 14px;
+}
+
+.link-orange a {
+  color: #ffa039;
+  margin-right: 18px;
+}
+
+.our-family {
+  background: #d7d7d7;
+  border-radius: 0px;
+  flex-grow: 1;
+}
+
+.our-family h5 {
+  margin-top: 36px;
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.our-family div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-family div:last-child {
+  margin-bottom: 20px;
+}
+
+.our-family img {
+  text-align: center;
+  background: #fafafa;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.16);
+  border-radius: 15px;
+  width: 137px;
+  padding: 10px;
+  height: 38px;
+  margin: 0 8px 16px 8px;
+}
+
+/* ///////////////////////////////////// */
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1280px) {
+  .home,
+  .lost-password-home,
+  .resend-activation-email-home {
+    margin-left: 96px;
+    margin-left: 108px;
+  }
+
+  .lost-password-home {
+    margin-bottom: 195px;
+  }
+
+  .resend-activation-email-home {
+    margin-bottom: 150px;
+  }
+
+  .log-in-illustration,
+  .lost-password-illustration,
+  .resend-activation-email-illustration {
+    width: unset;
+    margin-left: 50px;
+    max-width: 400px;
+  }
+
+  .log-in-illustration img,
+  .lost-password-illustration img,
+  .resend-activation-email-illustration img {
+    max-width: 280px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* HEADER */
+  .bolt-logo {
+    width: 146px;
+    height: 39px;
+    margin: 26px 21px 32px 21px;
+  }
+
+  nav a {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .log-in {
+    margin: 0;
+    margin-right: 16px;
+  }
+
+  .sign-up {
+    border: 2px solid #ff7800;
+    padding: 15px 30px;
+    margin: 0;
+    margin-right: 16px;
+  }
+
+  .theme-icon {
+    margin: 0;
+    margin-right: 24px;
+  }
+
+  /* LOG IN */
+  .home,
+  .lost-password-home,
+  .resend-activation-email-home {
+    width: 50%;
+    margin-top: 75px;
+    margin-left: 108px;
+  }
+
+  .home h2,
+  .lost-password-home h2,
+  .resend-activation-email-home h2 {
+    font-size: 34.18px;
+    line-height: 42px;
+    margin-bottom: 8px;
+  }
+
+  .home p,
+  .lost-password-home p,
+  .resend-activation-email-home p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 24px;
+  }
+
+  form {
+    gap: 16px;
+  }
+
+  form input {
+    font-weight: 300;
+    width: 392px;
+    height: 47px;
+    border: 1px solid #ababab;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .resend-activation-email form input {
+    border: 1px solid #ababab;
+  }
+
+  .btn-link {
+    gap: 32px;
+  }
+
+  .password-recovery,
+  .send-activation {
+    margin-top: 16px;
+    background: #ffa039;
+    box-shadow: inset -2px -2px 10px #ff7800;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fafafa;
+    border: none;
+  }
+
+  .hidden-under-1024 {
+    display: none;
+  }
+
+  .btn-link a {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .checkbox {
+    margin: 15px 0 17px 0;
+    gap: 5px;
+  }
+
+  .validation {
+    display: none;
+  }
+
+  .checkbox p {
+    margin: 0;
+  }
+
+  .home button {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 26px;
+  }
+
+  .main-links {
+    gap: 8px;
+    margin-bottom: 33px;
+  }
+
+  .hidden {
+    display: inline;
+  }
+
+  .main-links button {
+    margin: 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .paragraph-link {
+    margin-bottom: 139px;
+    align-items: center;
+  }
+
+  .paragraph-link p {
+    margin: 0;
+  }
+
+  .paragraph-link a {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .log-in-illustration {
+    width: unset;
+    width: 50%;
+    margin-left: 50px;
+  }
+
+  .lost-password-illustration {
+    width: unset;
+    width: 50%;
+    margin-left: 0px;
+    padding-bottom: 90px;
+    padding-top: 70px;
+  }
+
+  .resend-activation-email-illustration {
+    width: 50%;
+    padding-bottom: 90px;
+    padding-top: 70px;
+    margin-left: 50px;
+  }
+
+  .log-in-illustration img {
+    width: 443px;
+    height: 350px;
+  }
+
+  .lost-password-illustration img {
+    width: 445px;
+    height: 445px;
+  }
+
+  .resend-activation-email-illustration img {
+    width: 445px;
+    height: 400px;
+  }
+
+  /* FOOTER */
+  .logos {
+    margin-top: 28px;
+    margin-right: 60px;
+    margin-left: 24px;
+  }
+
+  .logos p {
+    margin-top: 40px;
+    margin-bottom: 22px;
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .taraba-logo {
+    width: 96px;
+    margin-bottom: 16px;
+  }
+
+  .taraba-logo img {
+    width: 100%;
+  }
+
+  .social-network-logos img {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+  }
+
+  .links {
+    margin-top: 33px;
+  }
+
+  .links p {
+    font-size: 14px;
+    line-height: 11px;
+  }
+
+  .links a {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .link-orange {
+    margin-top: 30px;
+    margin-bottom: 22px;
+  }
+
+  .link-orange a {
+    margin-right: 24px;
+  }
+
+  .our-family h5 {
+    margin-top: 36px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .our-family div:last-child {
+    margin-bottom: 7px;
+  }
+
+  .our-family img {
+    border-radius: 10px;
+    width: 114px;
+    padding: 9px;
+    height: 30px;
+    margin: 0 8px 16px 8px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  /* LOG IN */
+  .home,
+  .lost-password-home,
+  .resend-activation-email-home {
+    margin-left: 36px;
+  }
+
+  .log-in-illustration img,
+  .lost-password-illustration img,
+  .resend-activation-email-illustration img {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  /* FOOTER */
+  footer {
+    padding-bottom: 162px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .logos-and-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logos {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .logos p {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 146px;
+    left: 0;
+    right: 0;
+  }
+
+  .taraba-logo {
+    width: 87px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .taraba-logo img {
+    width: 100%;
+  }
+
+  .social-network-logos {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .social-network-logos img {
+    width: 22px;
+    height: 22px;
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+
+  .links {
+    margin-top: 40px;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
+  .links p {
+    margin-bottom: 24px;
+  }
+
+  .links a {
+    margin-bottom: 16px;
+  }
+
+  .link-orange {
+    margin-top: 32px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link-orange a {
+    margin: 0;
+    margin-bottom: 18px;
+  }
+
+  .our-family h5 {
+    margin-top: 31px;
+    margin-bottom: 19px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .our-family div:last-child {
+    margin-bottom: 28px;
+  }
+
+  .our-family img {
+    border-radius: 10px;
+    width: 95px;
+    padding: 7px;
+    height: 25px;
+    margin: 0 8px 16px 8px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  /* HEADER */
+  header {
+    background: #fafafa;
+    box-shadow: 0px 1px 16px rgba(255, 120, 0, 0.2);
+  }
+
+  .bolt-logo {
+    width: 87px;
+    margin: 19px 8px;
+  }
+
+  .menu-icon {
+    display: inline-block;
+    width: 27px;
+    height: 12px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+
+  .menu-icon2 {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 38px 38px 70px 127px;
+    cursor: pointer;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .navbar {
+    display: block;
+    height: 595px;
+    width: 187px;
+    position: absolute;
+    background-color: #fafafa;
+    top: 0;
+    right: 0;
+    display: none;
+    border-radius: 0px 0px 0px 15px;
+  }
+
+  nav a {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 70px;
+  }
+
+  .log-in {
+    width: max-content;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  .sign-up {
+    text-align: center;
+    padding: 10px;
+    width: 117px;
+    height: 47px;
+    margin-left: 20px;
+    border: 2px solid #ffa039;
+  }
+
+  .theme-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 16px;
+  }
+
+  /* LOG IN */
+
+  .home,
+  .lost-password-home,
+  .resend-activation-email-home {
+    width: 100%;
+  }
+
+  .lost-password-home {
+    margin-bottom: 195px;
+  }
+
+  .resend-activation-email-home {
+    margin-bottom: 150px;
+  }
+
+  .log-in-illustration,
+  .lost-password-illustration,
+  .resend-activation-email-illustration {
+    display: none;
+  }
+
+  /* FOOTER */
+  footer {
+    padding-bottom: 162px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .logos-and-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logos {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .logos p {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 146px;
+    left: 0;
+    right: 0;
+  }
+
+  .taraba-logo {
+    width: 87px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .taraba-logo img {
+    width: 100%;
+  }
+
+  .social-network-logos {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .social-network-logos img {
+    width: 22px;
+    height: 22px;
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+
+  .links {
+    margin-top: 40px;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
+  .links p {
+    margin-bottom: 24px;
+  }
+
+  .links a {
+    margin-bottom: 16px;
+  }
+
+  .link-orange {
+    margin-top: 32px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link-orange a {
+    margin: 0;
+    margin-bottom: 18px;
+  }
+
+  .our-family h5 {
+    margin-top: 31px;
+    margin-bottom: 19px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .our-family div:last-child {
+    margin-bottom: 28px;
+  }
+
+  .our-family img {
+    border-radius: 10px;
+    width: 95px;
+    padding: 7px;
+    height: 25px;
+    margin: 0 8px 16px 8px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* HEADER */
+  header {
+    background: #fafafa;
+    box-shadow: 0px 1px 16px rgba(255, 120, 0, 0.2);
+  }
+
+  .bolt-logo {
+    width: 87px;
+    margin: 19px 8px;
+  }
+
+  .menu-icon {
+    display: inline-block;
+    width: 27px;
+    height: 12px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+
+  .menu-icon2 {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 38px 38px 70px 127px;
+    cursor: pointer;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .navbar {
+    display: block;
+    height: 595px;
+    width: 187px;
+    position: absolute;
+    background-color: #fafafa;
+    top: 0;
+    right: 0;
+    display: none;
+    border-radius: 0px 0px 0px 15px;
+  }
+
+  nav a {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 70px;
+  }
+
+  .log-in {
+    width: max-content;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  .sign-up {
+    text-align: center;
+    padding: 10px;
+    width: 117px;
+    height: 47px;
+    margin-left: 20px;
+    border: 2px solid #ffa039;
+  }
+
+  .theme-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 16px;
+  }
+
+  /* LOG IN */
+  .home,
+  .lost-password-home,
+  .resend-activation-email-home {
+    width: 100%;
+    margin-top: 55px;
+    margin-left: 9px;
+  }
+
+  .lost-password-home {
+    margin-bottom: 195px;
+  }
+
+  .resend-activation-email-home {
+    margin-bottom: 150px;
+  }
+
+  .home h2,
+  .lost-password-home h2,
+  .resend-activation-email-home h2 {
+    font-size: 34.18px;
+    line-height: 42px;
+    margin-bottom: 8px;
+  }
+
+  .home p,
+  .lost-password-home p,
+  .resend-activation-email-home p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 24px;
+  }
+
+  form {
+    gap: 16px;
+    margin-right: 9px;
+  }
+
+  form input {
+    width: 100%;
+    height: 47px;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .resend-activation-email form input {
+    border: 1px solid #999898;
+  }
+
+  .btn-link {
+    gap: 32px;
+  }
+
+  .password-recovery,
+  .send-activation {
+    margin-top: 16px;
+    background: #ffa039;
+    box-shadow: inset -2px -2px 10px #ff7800;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .btn-link a {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .checkbox {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    gap: 8px;
+  }
+
+  .checkbox p {
+    margin: 0;
+  }
+
+  .home button {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 24px;
+  }
+
+  .main-links {
+    gap: 24px;
+    margin-bottom: 33px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .main-links button {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .paragraph-link {
+    gap: 8px;
+    margin-bottom: 50px;
+  }
+
+  .paragraph-link p {
+    margin: 0;
+  }
+
+  .log-in-illustration {
+    display: none;
+  }
+
+  .lost-password-illustration {
+    display: none;
+  }
+
+  .resend-activation-email-illustration {
+    display: none;
+  }
+
+  /* FOOTER */
+  footer {
+    padding-bottom: 162px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .logos-and-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logos {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .logos p {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 146px;
+    left: 0;
+    right: 0;
+  }
+
+  .taraba-logo {
+    width: 87px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .taraba-logo img {
+    width: 100%;
+  }
+
+  .social-network-logos {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .social-network-logos img {
+    width: 22px;
+    height: 22px;
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+
+  .links {
+    margin-top: 40px;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
+  .links p {
+    margin-bottom: 24px;
+  }
+
+  .links a {
+    margin-bottom: 16px;
+  }
+
+  .link-orange {
+    margin-top: 32px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link-orange a {
+    margin: 0;
+    margin-bottom: 18px;
+  }
+
+  .our-family h5 {
+    margin-top: 31px;
+    margin-bottom: 19px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .our-family div:last-child {
+    margin-bottom: 28px;
+  }
+
+  .our-family img {
+    border-radius: 10px;
+    width: 95px;
+    padding: 7px;
+    height: 25px;
+    margin: 0 8px 16px 8px;
+  }
+}

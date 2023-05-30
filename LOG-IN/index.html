@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img
+          src="assets/header/bolt-logo.svg"
+          alt="bolt-logo"
+          class="bolt-logo"
+        />
+      </div>
+
+      <nav>
+        <div class="navbar">
+          <img
+            src="assets/header/menu-icon2.svg"
+            alt="menu-icon2"
+            class="menu-icon2"
+          />
+
+          <a href="../HOME-PAGE/index.html#generate">Generate QR Codes</a>
+          <a href="../HOME-PAGE/index.html#pricing">Pricing</a>
+          <a href="../LOG-IN/index.html" class="log-in">Log in</a>
+          <a href="../SIGN-UP/index.html" class="sign-up">Sign up</a>
+        </div>
+        <img
+          src="assets/header/theme-icon.svg"
+          alt="theme-icon"
+          class="theme-icon"
+        />
+
+        <img
+          src="assets/header/menu-icon.svg"
+          alt="menu-icon"
+          class="menu-icon"
+        />
+      </nav>
+    </header>
+
+    <main>
+      <div class="home">
+        <h2 class="bold">Log in</h2>
+        <p>Welcome back to your Bolt account, it's good to see you again!</p>
+
+        <form action="">
+          <input type="text" placeholder="Your name*" />
+          <input type="password" placeholder="Your password*" />
+        </form>
+
+        <div class="checkbox">
+          <img
+            src="assets/log-in/chech-box.svg"
+            alt="check-box"
+            class="check-box"
+          />
+
+          <img
+            src="assets/log-in/validation.svg"
+            alt="validation"
+            class="validation"
+          />
+          <p>Remember me</p>
+        </div>
+
+        <button class="login">Log in</button>
+
+        <div class="main-links">
+          <button class="btn-lost-password">Lost Password</button>
+          <span class="hidden">/</span>
+          <button class="btn-resend-activation">Resend Activation</button>
+        </div>
+
+        <div class="paragraph-link">
+          <p>Don't have an account?</p>
+          <a href="../SIGN-UP/index.html">Sign up</a>
+        </div>
+      </div>
+
+      <div class="log-in-illustration">
+        <img
+          src="assets/log-in/log-in-illustration.png"
+          alt="log-in-illustration"
+        />
+      </div>
+    </main>
+
+    <div class="lost-password">
+      <div class="lost-password-home">
+        <h2 class="bold">Lost password</h2>
+        <p>
+          We will send you an email with a magic recovery link to reset your
+          password.
+        </p>
+
+        <form action="">
+          <input type="email" placeholder="Your email*" />
+        </form>
+
+        <div class="btn-link">
+          <button class="password-recovery">
+            Send <span class="hidden-under-1024">me</span> link
+          </button>
+
+          <a href="#" class="return">Return to Login</a>
+        </div>
+      </div>
+
+      <div class="lost-password-illustration">
+        <img
+          src="assets/log-in/lost-password-illustration.png"
+          alt="lost-password-illustration"
+        />
+      </div>
+    </div>
+
+    <div class="resend-activation-email">
+      <div class="resend-activation-email-home">
+        <h2 class="bold">Resend activation email</h2>
+        <p>
+          We will send you an email with a magic recovery link to reset your
+          password.
+        </p>
+
+        <form action="">
+          <input type="email" placeholder="Your email*" />
+        </form>
+
+        <div class="btn-link">
+          <button class="send-activation">Send activation</button>
+
+          <a href="#" class="return">Return to Login</a>
+        </div>
+      </div>
+
+      <div class="resend-activation-email-illustration">
+        <img
+          src="assets/log-in/resend-activation-email-illustration.png"
+          alt="resend-activation-email-illustration"
+        />
+      </div>
+    </div>
+
+    <footer>
+      <div class="logos-and-links">
+        <div class="logos">
+          <div class="taraba-logo">
+            <img
+              src="assets/footer/taraba-logo-latin-full-color-white 1.svg"
+              alt="taraba-logo"
+            />
+          </div>
+          <div class="social-network-logos">
+            <img src="assets/footer/linked-in-large.svg" alt="linked-in" />
+            <img src="assets/footer/instagram-large.svg" alt="instagram-logo" />
+            <img src="assets/footer/you-tube-large.svg" alt="youtube-logo" />
+            <img src="assets/footer/facebook-large.svg" alt="facebook-logo" />
+          </div>
+
+          <div><p>Copyright &copy; 2022 Taraba. All rights reseved.</p></div>
+        </div>
+
+        <div class="links">
+          <p>Quick links</p>
+
+          <div class="link-gray">
+            <a href="../HOME-PAGE/index.html#generate">Generate QR codes</a>
+            <a href="../HOME-PAGE/index.html#pricing">Pricing</a>
+          </div>
+          <div class="link-orange">
+            <a href="#">Terms and conditions</a>
+            <a href="#">Privacy policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="our-family">
+        <h5>Our family</h5>
+
+        <div>
+          <img
+            src="assets/footer/trb-tech-logo-solid-white (1) 1.svg"
+            alt="taraba-tech-logo"
+          />
+
+          <img
+            src="assets/footer/trb-edu-logo-solid-white.svg"
+            alt="taraba-edu-logo"
+          />
+        </div>
+
+        <div>
+          <img
+            src="assets/footer/portal-logo-lat-solid-white 1.svg"
+            alt="portal-logo"
+          />
+
+          <img
+            src="assets/footer/oakly-logo-full-color 9.svg"
+            alt="oakly-logo"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
